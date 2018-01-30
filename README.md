@@ -1,3 +1,5 @@
+## TODO
+
 Front
 =
 
@@ -9,7 +11,7 @@ Back
 BD
 =
 
-* Table
-    * article
-    * category
-    * users
+* ~~Table~~
+    * ~~article~~
+    * ~~category~~
+    * ~~users~~
