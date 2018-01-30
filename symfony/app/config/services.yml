@@ -33,3 +33,10 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+
+    # отфанаря название
+    app.book_exp_meneger:
+      class: AppBundle\Service\BookExportManager
+      public: true
+
