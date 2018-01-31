@@ -39,8 +39,7 @@ class User implements UserInterface
      * @var string
      *
      * @ORM\Column(name="roles", type="json_array")
-     *
-     * @JMS\Expose
+     * @JMS\Exclude
      */
     private $roles;
 
@@ -63,7 +62,7 @@ class User implements UserInterface
     /**
      *
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Organisations")
-     *
+     * @JMS\Exclude
      */
     private $organisation;
 
