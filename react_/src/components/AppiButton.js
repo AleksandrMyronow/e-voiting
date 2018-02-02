@@ -15,10 +15,12 @@ class AppiButton extends Component
 
     loadDoc () {
 
-        axios.get("http://127.0.0.1:8001/api/users")
+
+        axios.get("http://127.0.0.1:8000/api/article")
             .then(({ data }) => {
+                console.log(data);
                 this.setState({
-                    products: data
+                    products: JSON.parse(data)
                 });
             });
         console.log("state - ", this.state);
@@ -27,10 +29,10 @@ class AppiButton extends Component
     }
 
     render(){
-        let array = {"id":1,"email":"admin@admin.ad"};
+
         let array1 = this.state.products;
 
-        console.log("array - ", array);
+
         console.log("array1 - ", array1);
 
         // array = array.map((item) => {

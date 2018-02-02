@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ApiButton from './components/AppiButton'
+import ApiButton from '../components/AppiButton'
 
 class App extends Component {
     loadDoc() {
@@ -17,11 +15,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">        
-
-        <p>Hello</p>
-       <ApiButton></ApiButton>
-
+      <div className="App">
+          <p>Hello</p>
+          <ApiButton></ApiButton>
       </div>
     );
   }
