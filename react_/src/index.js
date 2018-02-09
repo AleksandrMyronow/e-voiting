@@ -1,19 +1,19 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import App from './containers/App';
+import ReactDOM from 'react-dom';
+import './style/index.css';
+// import App from './App';
+import {BrowserRouter, Route} from 'react-router-dom';
+import registerServiceWorker from './registerServiceWorker';
+import Main from "./components/Main";
+import Form from "./components/Form";
 
-
-import './style/app.css';
-import configureStore from './store/configureStore';
-
-const store = configureStore();
-
-render(
-    <Provider store={store}>
-        <div className='app'>
-            <App/>
+ReactDOM.render((
+    <BrowserRouter>
+        <div>
+            <Route path="/" component={Main}/>
+            <Route path="/form" component={Form}/>
         </div>
-    </Provider>,
+    </BrowserRouter>),
     document.getElementById('root')
 );
+registerServiceWorker();

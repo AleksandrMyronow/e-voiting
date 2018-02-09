@@ -33,30 +33,16 @@ class ProgrammerController extends Controller
         ;
 
         if (!$users) {
-            throw $this->createNotFoundException('D\'oh! Book not found');
+            return new Response("",404, "Not found");
         }
 
         $array = $this->get('jms_serializer')->serialize($users, 'json');
 
-//        $users = $this
-//            ->getDoctrine()
-//            ->getRepository('AppBundle:User')
-//            ->find("1");
-//        if (!$users) {
-//            throw new HttpException(400, "Invalid data");
-//        }
-//        dump($users);
-//        die();
-//        json_encode($array);
-
-//        dump($users);
 
 
         return new JsonResponse($array);
 
 
-
-//        return [];
     }
 
 }
