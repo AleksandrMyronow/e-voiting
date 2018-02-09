@@ -6,7 +6,7 @@
  * Time: 14:56
  */
 
-namespace AppBundle\Controller\pi;
+namespace AppBundle\Controller\Api;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
