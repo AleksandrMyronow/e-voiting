@@ -21,7 +21,7 @@ class ArticleController extends Controller
     /**
      * article list page
      *
-     * @Route("/api/rticle", name="api_article")
+     * @Route("/api/article", name="api_article")
      * @Template()
      */
     public function indexAction(){

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Applicants from './components/Applicants';
-import applicants from "./json/applicants";
-import humans from './json/humans';
-import Form from './components/Form';
-import Check from "./components/Check";
+import Applicants from '../containers/App/Applicants';
+import applicants from "../json/applicants";
+import humans from '../json/humans';
+import Form from '../containers/App/Form';
+import Check from "../containers/App/Check";
 
 class App extends Component {
   render () {
