@@ -24,10 +24,12 @@ class SecurityController extends Controller
      * @Method("POST")
      */
     public function indexAction(Request $request)
-    {   header("Access-Control-Allow-Origin: *");
-
+    {
+        header("Access-Control-Allow-Origin: *");
+        header('Access-Control-Allow-Headers: Content-Type, *');
 
         $data = json_decode($request->getContent(), true);
+
 
     if (!$data){
         return new Response('Woops, i didn;t get data');

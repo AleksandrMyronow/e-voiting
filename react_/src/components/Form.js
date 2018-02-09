@@ -56,7 +56,19 @@ class Form extends Component {
        e.preventDefault();
        console.log(this.state)
 
-        axios.post('127.0.0.1:8000/api/form', {
+        // axios.post('http://127.0.0.1:8000/api/form', {
+        //     firstName: 'Fred',
+        //     lastName: 'Flintstone'
+        // })
+        //     .then(function (response) {
+        //         console.log(response);
+        //     })
+        //     .catch(function (error) {
+        //         console.log("error", error);
+        //     });
+
+
+        axios.post('http://127.0.0.1:8000/api/form', {
             firstName: 'Fred',
             lastName: 'Flintstone'
         })
@@ -64,8 +76,9 @@ class Form extends Component {
                 console.log(response);
             })
             .catch(function (error) {
-                console.log("error", error);
+                console.log(error);
             });
+
     }
 
 
