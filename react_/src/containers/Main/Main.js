@@ -23,7 +23,8 @@ class Main extends Component {
                         <Link to="/" >Home</Link>
                         <Link to="/"><li className="main-nav-order">Электронное голосование</li></Link>
                         <Link to="/"><li className="main-nav-order">Новости</li></Link>
-                        <Link to="/form"><li className="main-nav-order">Личный кабинет</li></Link>
+                        <Link to="/form"><li className="main-nav-order">Форма</li></Link>
+                        <Link to="/login"><li className="main-nav-order">Логин</li></Link>
                     </ul>
                 </nav>
             </div>
